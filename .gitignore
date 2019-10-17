@@ -1,4 +1,5 @@
 dist/
 .cache/
 tags
+node_modules/
 
