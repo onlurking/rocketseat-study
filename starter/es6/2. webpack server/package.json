@@ -9,9 +9,11 @@
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
   "scripts": {
-    "dev": "webpack --mode=development -w"
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack-dev-server --mode=production"
   }
 }
