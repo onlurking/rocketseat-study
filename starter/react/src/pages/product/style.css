@@ -1,0 +1,21 @@
+.product {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.product__title {
+  font-size: 32px;
+}
+
+.product__description {
+  color: 666px;
+  margin-top: 6px;
+}
+
+.product__url {
+  color: #006699;
+}
