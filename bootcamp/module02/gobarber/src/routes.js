@@ -11,6 +11,7 @@ import ProviderController from './app/controllers/ProviderController';
 import ScheduleController from './app/controllers/ScheduleController';
 import SessionController from './app/controllers/SessionController';
 import UserController from './app/controllers/UserController';
+import NotificationController from './app/controllers/NotificationController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -22,6 +23,9 @@ routes.use(authMiddleware);
 
 routes.put('/users', UserController.update);
 routes.get('/providers', ProviderController.index);
+
+routes.get('/notifications', NotificationController.index);
+routes.put('/notifications/:id', NotificationController.update);
 
 routes.post('/files', upload.single('file'), FileController.store);
 
